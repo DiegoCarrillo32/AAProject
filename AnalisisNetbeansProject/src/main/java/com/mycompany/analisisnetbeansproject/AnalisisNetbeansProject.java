@@ -5,6 +5,8 @@
 
 package com.mycompany.analisisnetbeansproject;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author kosti
@@ -12,6 +14,17 @@ package com.mycompany.analisisnetbeansproject;
 public class AnalisisNetbeansProject {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Dinamica dinamica = new Dinamica();
+        ArrayList<Integer> array = new ArrayList<Integer>();
+        array.add(-7);
+        array.add(-3);
+        array.add(-5);
+        array.add(5);
+        array.add(8);
+        
+        
+        ArrayList<Integer> res = dinamica.foundZero(array, 0);
+        System.out.println(res);
     }
 }
