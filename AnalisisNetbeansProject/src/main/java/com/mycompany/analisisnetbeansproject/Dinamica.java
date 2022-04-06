@@ -2,13 +2,6 @@ package com.mycompany.analisisnetbeansproject;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-// A recursive solution for subset sum
-// problem
-
-/* This code is contributed by Rajat Mishra */
-// Java implementation of above approach
-
-
 
 
 public class Dinamica {
