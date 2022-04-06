@@ -16,15 +16,36 @@ public class AnalisisNetbeansProject {
     public static void main(String[] args) {
         
         Dinamica dinamica = new Dinamica();
+        FuerzaBruta fuerza = new FuerzaBruta();
         ArrayList<Integer> array = new ArrayList<Integer>();
-        array.add(-7);
-        array.add(-3);
-        array.add(-5);
-        array.add(5);
         array.add(8);
+  
+        array.add(3);
+        array.add(5);
+        array.add(1);
+        array.add(-4);
+        array.add(15);
+        array.add(1);
+        array.add(2);
+        array.add(3);
+        array.add(4);
+        array.add(5);
+        array.add(6);
+        array.add(7);
+        array.add(8);
+        array.add(9);
+        array.add(10);
+        array.add(11);
+        array.add(12);
+        array.add(13);
+        array.add(14);
+        array.add(-8);
+        array.add(-8);
+        int[] array1 = {2, 2, 2, -4, -4};
+        int [] arrA = {8,3,5,1,-4,15,1,2,3,4,5,6,7,8,9,10,11,12,13,14,-8};
+        ArrayList<Integer> fuerzaa = fuerza.foundZero(array, 0);
+        System.out.println(fuerzaa);
+        dinamica.findSets(arrA);
         
-        
-        ArrayList<Integer> res = dinamica.foundZero(array, 0);
-        System.out.println(res);
     }
 }
