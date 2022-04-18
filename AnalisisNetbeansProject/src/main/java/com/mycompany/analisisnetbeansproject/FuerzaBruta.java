@@ -1,9 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.analisisnetbeansproject;
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -14,15 +9,6 @@ import java.util.Random;
 public class FuerzaBruta {
     int asignaciones = 0;
     int comparaciones = 0;
-    public ArrayList<Integer> giveRandomArray(int limit){
-        
-        ArrayList<Integer> empty = new ArrayList<>();
-        for (int i = 0; i < limit; i++) {
-            int randomNum =  new Random().nextInt(-100, 100); 
-            empty.add(randomNum);
-        }
-        return empty;
-    }
  public int sumList( ArrayList<Integer> arr, Integer number){
         Integer result = 0;
         asignaciones+=2;
