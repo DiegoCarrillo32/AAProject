@@ -5,6 +5,7 @@
 package com.mycompany.analisisnetbeansproject;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *
@@ -13,6 +14,15 @@ import java.util.ArrayList;
 public class FuerzaBruta {
     int asignaciones = 0;
     int comparaciones = 0;
+    public ArrayList<Integer> giveRandomArray(int limit){
+        
+        ArrayList<Integer> empty = new ArrayList<>();
+        for (int i = 0; i < limit; i++) {
+            int randomNum =  new Random().nextInt(-100, 100); 
+            empty.add(randomNum);
+        }
+        return empty;
+    }
  public int sumList( ArrayList<Integer> arr, Integer number){
         Integer result = 0;
         asignaciones+=2;
@@ -23,6 +33,7 @@ public class FuerzaBruta {
         }
         return result + number;
     }
+    // 3
 
     public ArrayList<Integer> foundZeroAux(ArrayList<Integer> arr, Integer result){
         ArrayList<Integer> numbers = new ArrayList<Integer>();
@@ -46,6 +57,7 @@ public class FuerzaBruta {
         ArrayList<Integer> empty = new ArrayList<Integer>();
         return empty;
     }
+    // 11
 
     public ArrayList<Integer> foundZero(ArrayList<Integer> array, Integer result){
         ArrayList<Integer> temp = array;
@@ -68,6 +80,9 @@ public class FuerzaBruta {
         return empty;
 
     }
+    // 12
+
+    // TOTAL 26
     
     
     
